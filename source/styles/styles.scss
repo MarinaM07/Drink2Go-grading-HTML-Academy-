@@ -2,6 +2,20 @@
 @import "./common/variables.scss";
 @import "./common/global.scss";
 @import "./common/fonts.scss";
+@import "./common/badge.scss";
+@import "./common/mixin.scss";
+@import "./common/page.scss";
+@import "./common/visually-hidden.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/button.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/special-offers.scss";
+@import "./blocks/featuries.scss";
+@import "./blocks/catalog-filter.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/products.scss";
+@import "./blocks/map.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/range-controls.scss";
+@import "./blocks/social.scss";

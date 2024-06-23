@@ -1,0 +1,20 @@
+.badge {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $color-primary;
+
+  &--new {
+    margin: 0;
+    margin-top: 4px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}

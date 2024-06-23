@@ -1,0 +1,23 @@
+@mixin reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin container {
+  min-width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    min-width: 688px;
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 0 40px;
+  }
+}
