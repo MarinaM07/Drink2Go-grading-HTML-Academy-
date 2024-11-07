@@ -19,12 +19,18 @@ mainToggle.addEventListener('click', () => {
 });
 
 const navLinks = document.querySelectorAll('.main-header__nav-link');
-
+let currentLink = document.querySelector('.main-header__nav-link--current'); // Изначально текущая ссылка - первая
 navLinks.forEach((link) => {
   link.addEventListener('click', (event) => {
     event.preventDefault();
-    link.classList.remove('main-header__nav-link--current');
+    // Убираем класс 'current' у текущей ссылки, если она не первая
+    if (currentLink && currentLink !== link) {
+      currentLink.classList.remove('main-header__nav-link--current');
+    }
+    // Добавляем класс 'current' к новой ссылке
     link.classList.add('main-header__nav-link--current');
+    // Обновляем текущую ссылку
+    currentLink = link;
   });
 });
 
