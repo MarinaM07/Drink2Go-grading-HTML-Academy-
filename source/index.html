@@ -21,7 +21,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header" data-test="header">
+  <header class="main-header main-header--nojs main-header--closed" data-test="header">
     <div class="main-header__logo">
       <a class="main-header__logo-link" href="#">
         <picture>
@@ -37,8 +37,8 @@
         Интернет-магазин кофейных напитков
       </span>
     </div>
-    <nav class="main-header__nav main-header__nav--nojs main-header__nav--closed">
-      <ul class="main-header__nav-list main-header__nav-list--closed">
+    <nav class="main-header__nav">
+      <ul class="main-header__nav-list">
         <li class="main-header__nav-item">
           <a class="main-header__nav-link main-header__nav-link--current" href="#">Главная</a>
         </li>
@@ -77,7 +77,7 @@
         </a>
       </li>
     </ul>
-    <button class="main-header__toggle main-header__toggle--closed" type="button">
+    <button class="main-header__toggle" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
   </header>
